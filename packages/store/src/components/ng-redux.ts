@@ -16,7 +16,7 @@ import { Comparator, PathSelector, Selector } from './selectors';
  * redux store and adds a few other add on methods. It's what you'll inject
  * into your Angular application as a service.
  */
-export abstract class NgRedux<RootState> implements ObservableStore<RootState> {
+export abstract class NgRedux<RootState> implements NgRedux<RootState> {
   /** @hidden, @deprecated */
   static instance?: ObservableStore<any> = undefined;
 
